@@ -1,0 +1,33 @@
+artifact_path: /home/nas/Projects/mlopslearn/mlruns/2/models/m-5debe453f50a4b338d12765861548958/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.12.3
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: ubj
+    xgb_version: 3.2.0
+is_signature_from_type_hint: false
+mlflow_version: 3.10.0
+model_id: m-5debe453f50a4b338d12765861548958
+model_size_bytes: 566856
+model_uuid: m-5debe453f50a4b338d12765861548958
+prompts: null
+run_id: fb241808183546c099f4b26242fc4941
+signature:
+  inputs: '[{"type": "long", "name": "Age", "required": true}, {"type": "double",
+    "name": "Sets Per Match", "required": true}, {"type": "double", "name": "Receives
+    Per Match", "required": true}, {"type": "double", "name": "Serves Per Match",
+    "required": true}, {"type": "double", "name": "Blocks Per Match", "required":
+    true}, {"type": "double", "name": "Digs Per Match", "required": true}, {"type":
+    "double", "name": "Attacks Per Match", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-02-26 17:14:20.421754'

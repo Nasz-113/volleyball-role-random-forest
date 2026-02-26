@@ -1,0 +1,28 @@
+artifact_path: /home/nas/Projects/mlopslearn/mlruns/2/models/m-fdfb89b2dfd24c7d93dbf5f0e8a23e27/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.12.3
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: ubj
+    xgb_version: 3.2.0
+is_signature_from_type_hint: false
+mlflow_version: 3.10.0
+model_id: m-fdfb89b2dfd24c7d93dbf5f0e8a23e27
+model_size_bytes: 515708
+model_uuid: m-fdfb89b2dfd24c7d93dbf5f0e8a23e27
+prompts: null
+run_id: 00921e7eecf341c69f79cb07d4c64abb
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 5]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-02-26 17:18:07.310643'
