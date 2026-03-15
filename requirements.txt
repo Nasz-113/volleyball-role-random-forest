@@ -9,3 +9,5 @@ shap
 prefect
 mlflow
 optuna
+fastapi
+uvicorn
