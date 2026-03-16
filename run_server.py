@@ -1,7 +1,11 @@
+import os
 import mlflow.pyfunc
 from fastapi import FastAPI
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
+
+if os.environ.get("MLFLOW_TRACKING_URI"):
+    mlflow.set_tracking_uri(os.environ.get("MLFLOW_TRACKING_URI"))
 
 app = FastAPI()
 model = mlflow.pyfunc.load_model("models:/random-forest-classifier-model-dev/latest")
